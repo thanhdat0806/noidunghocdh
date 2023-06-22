@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaitaptkwDat</title>
+    <style type="text/css">
+        p {
+            color: rgb(0, 0, 255);
+        }
+        
+        td {
+            color: rgb(0, 26, 255);
+            font-weight: bold;
+        }
+        
+        label {
+            color: rgb(0, 4, 225);
+        }
+    </style>
+
+</head>
+
+<body>
+    <img src="biaxe1.jpg" width="1880px" ; height="300px">
+
+    <table border="1" style="height: 250px;width: 200px; float:left;color: blue; border: rgb(7, 7, 73);">
+        <tr>
+            <td>Trang chủ</td>
+        </tr>
+
+        <tr>
+            <td>Giới thiệu sản phẩm</td>
+        </tr>
+
+        <tr>
+            <td>Các đại lý</td>
+        </tr>
+
+        <tr>
+            <td>Dịch vụ</td>
+        </tr>
+
+        <tr>
+            <td>Hợp tác</td>
+        </tr>
+
+        <tr>
+            <td>Góp ý</td>
+        </tr>
+
+        <tr>
+            <td>Quảng cáo</td>
+        </tr>
+
+    </table>
+    <form action="form_action.php" method="get" style="text-align: center; color:darkblue;">
+        <legend style="color: red;"><b>HỘP THƯ GÓP Ý</b></legend>
+        <label>Họ tên</label>
+        <input type="text" name="name" size="30" />
+        <br/>
+        <label for="name">Hộ khẩu</label>
+        <select style="width: 220px;">
+            <option value="1" selected="selected">Tp Ho Chi Minh</option>
+            <option value="2">Ha Noi</option>
+        </select>
+        <br>
+        <label>Góp ý về lĩnh vực</label>
+        <input type="checkbox" checked="checked" /> Dịch vụ
+        <input type="checkbox" /> Sản phẩm
+        <input type="checkbox" /> Loại khác
+        <br>
+        <label>Ngôn ngữ</label>
+        <input type="radio" name="ngonngu" value="anh" checked="checked" /> Anh
+        <input type="radio" name="ngonngu" value="viet" /> Việt
+        <br>
+        <label>Nội dung</label>
+        <textarea rows="10" cols="30"></textarea>
+        <br/>
+        <input type="submit" value="Submit" id="submit" />
+        <input type="reset" value="Xoa" id="reset" />
+    </form>
+</body>
+
+</html>
+
+</html>

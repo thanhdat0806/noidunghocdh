@@ -1,0 +1,99 @@
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Administration</title>
+		<link rel="stylesheet" href="styles-1.css" />
+		<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script>
+		function loadCanvas() {
+			var canvas = document.getElementById('my_canvas');
+			if(canvas.getContext) {
+				var ctx = canvas.getContext('2d');
+
+				ctx.beginPath();
+				ctx.arc(245,160,150,0,Math.PI*2,true);
+				ctx.fillStyle = "rgb(255,255,204)";
+				ctx.fill();
+				ctx.stroke();
+
+				ctx.fillStyle = "black";
+				ctx.beginPath();
+				ctx.arc(200,110,15,0,Math.PI*2,true);
+				ctx.fill();
+
+				ctx.beginPath();
+				ctx.arc(280,110,15,0,Math.PI*2,true);
+				ctx.fill();
+
+				ctx.beginPath();
+				ctx.arc(240,170,20,4,Math.PI*2,true);
+				ctx.stroke();
+
+				ctx.beginPath();
+				ctx.arc(240,190,60,0,Math.PI,false);
+				ctx.stroke();
+			} else {
+				document.getElementById('my_canvas').style.display = 'none';
+				document.getElementById('no-canvas').style.display = 'block';
+			}
+		}
+		</script>
+	</head>
+	<body onload="loadCanvas();">
+		<header>
+			<hgroup>
+				<h1><center>Overview of Internet <br> Information Services 5.0</center></h1>
+				<h2>An application example of HTML5 and CSS3</h2>
+			</hgroup>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="TH_23_4.html">Home</a></li>
+				<li><b>Administration</b></li>
+				<li><a href="TH_23_4_3.html">Programmability</a></li>
+				<li><a href="TH_23_4_4.html">Internet Standards</a></li>
+				<li><a href="TH_23_4_5.html">Architecture Overview</a></li>
+			</ul>
+		</nav>
+
+		<article>
+			<header>
+				<time datetime="2012-09-20" pubdate>
+					<span>Sep</span> 20
+				</time>
+				<h1>
+					<a href="#" title="Link to this post" rel="bookmark">Administration</a>
+				</h1>
+			</header>
+			<section>
+			<br>
+				<img src="images/administration.jpg"align="left"vspace="4" hspace="12" border="1">
+				<p><b>Restarting IIS</b> Restarts your Internet services without requiring you to restart your computer.</p>
+				<p><b>Process Accounting</b> Reports how Web sites use CPU resources on the server. This information helps determine which sites are using disproportionately high CPU resources and which sites have malfunctioning scripts or Common Gateway Interface (CGI) processes./p>
+				<p><b>Process Throttling</b> Limits the percentage of time the CPU spends processing out-�of-�process scripts in Active Server Pages (ASP), Internet Server Application Programming Interface (ISAPI), and CGI applications for individual Web sites. In addition, this feature can stop and restart malfunctioning processes.</p>
+				<p><b>Improved Custom Error</b> Messages Allow you to send informative messages to clients when HTTP errors occur on their Web sites. This feature does detailed error processing of scripts in ASP pages through the 500-100.asp custom error message. You can use the custom errors that IIS 5.0 provides, or create your own.</p>
+				<p><b>Web-based Administration Tools</b> Allow remote management of your server from almost any browser on any platform. With IIS 5.0, you can set up administration accounts (called Operators) with limited administration privileges on Web sites, in order to help distribute administrative tasks.</p>
+				<p><b>Terminal Services</b> Lets you remotely administer Windows services (such as IIS) through Microsoft� Management Console (MMC). A feature of Windows 2000 Server, Terminal Services can connect to Windows servers by dialing-up or through Point-to-Point Tunneling Protocol (PPTP). Terminal Services client software must also be installed on client computers.</p>
+			</section>
+
+			<section>
+				<header>
+					<h1>Nhạc trên YouTube</h1>
+				</header>
+				<p><iframe width="640" height="360" src="images/cover.mp4" frameborder="0" allowfullscreen></iframe>
+				<div class="no-html5-video"><p>This video will work in Mozilla Firefox or Google Chrome only.</p></div>
+				</video></p>
+			</section>
+
+			
+
+		<footer>
+			<p>&copy; 2012 ngocaotong. All rights reserved.</p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>5-3-2021</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<table border="1">
+    <tr>
+        <th><a href="Trangchu">Trang chủ</a></th>
+    </tr>
+    <tr>
+        <th><a href="Trangchu">Giới thiệu sản phẩm</a></th>
+        <th><a href="Trangchu">Các đại lý</a></th>
+        <th><a href="Trangchu">Dịch vụ</a></th>
+        <th><a href="Trangchu">Hợp tác</a></th>
+        <th><a href="Trangchu">Góp ý</a></th>
+        <th><a href="Trangchu">Quảng cáo</a></th>
+    </tr>
+</table>
+<form action="form_action.php" method="get">
+    <fieldset>
+        <legend style="text-transform: uppercase;">Hộp thư góp ý</legend>
+        <label for="name">Họ tên</label>
+        <input type="text" name="name" id="fname" size="30" />
+        <br/>
+        <label for="pwd">Password:</label>
+        <input type="password" name="pwd" id="pw" size="30" />
+        <br/>
+        <label for="addr">Address:</label>
+        <textarea name="addr" id="feedback" cols="30" rows="10"></textarea> <br/>
+        <input type="submit" value="Submit" id="submit">
+        <input type="reset" value="Reset" id="reset">
+    </fieldset>
+</form>
+<form>
+    <input type="radio" name="sex" value="male" checked="checked" /> Male
+    <br>
+    <input type="radio" name="sex" value="female"> Female
+</form>
+<form>
+    <input type="checkbox" name="bike" checked="checked" />I have a bike <br>
+    <input type="checkbox" name="car" />I have a car
+</form>
+
+</html>

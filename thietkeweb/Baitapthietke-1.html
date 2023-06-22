@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baitap : TranDuyLiem</title>
+    <style type="text/css">
+        p {
+            color: rgb(0, 0, 255);
+        }
+        
+        td {
+            color: rgb(0, 162, 255);
+            font-weight: bold;
+        }
+        
+        label {
+            color: rgb(0, 162, 225);
+        }
+    </style>
+
+</head>
+
+<body>
+    <img src="meomeo.jpg" width="1500" height="100px">
+    <table border="1" style="height: 200px; float:left; border: rgb(0, 26, 255);">
+        <tr>
+            <td>Trang chủ</td>
+        </tr>
+
+        <tr>
+            <td>Giới thiệu sản phẩm</td>
+        </tr>
+
+        <tr>
+            <td>Các đại lý</td>
+        </tr>
+
+        <tr>
+            <td>Dịch vụ</td>
+        </tr>
+
+        <tr>
+            <td>Hợp tác</td>
+        </tr>
+
+        <tr>
+            <td>Góp ý</td>
+        </tr>
+
+        <tr>
+            <td>Quảng cáo</td>
+        </tr>
+
+    </table>
+    <form action="form_action.php" method="get">
+        <table border="0" align="center">
+            <caption style="text-transform: uppercase; color: rgb(255, 0, 13); font-size: medium; text-align: center; font-weight: bold;">HỘP THƯ GÓP Ý</caption>
+            <tr>
+                <td style="text-align: right;"><label for="name">Họ tên</label></td>
+                <td><input type="text" name="name" id="fname" size="35" /></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><label>Hộ khẩu</label></td>
+                <td>
+                    <select>
+                    <option value="1" selected="selected">Tp Ho Chi Minh</option>
+                    <option value="2" >Tp Nha Trang</option>
+                    <option value="3" >Thủ đô Hà Nội</option>
+                    </select>
+                </td>
+
+            </tr>
+            <tr>
+                <td style="text-align: right;"><label>Góp ý về lĩnh vực</label></td>
+
+                <td><input type="checkbox" name="service" checked="checked" /> <label>Dịch vụ</label></td>
+
+                <td><input type="checkbox" name="product" /> <label>Sản phẩm</label></td>
+
+                <td><input type="checkbox" name="product" /> <label>Loại khác</label></td>
+
+            </tr>
+            <tr>
+                <td style="text-align: right;"><label>Ngôn Ngữ</label></td>
+
+                <td><input type="radio" name="language" value="Anh" checked="checked" /> <label>Anh</label></td>
+
+                <td><input type="radio" name="language" value="Việt" /> <label>Việt</label></td>
+                <br>
+            </tr>
+            <tr>
+
+                <td style="text-align: right;"><label for="cont">Nội dung</label></td>
+                <td><textarea name="cont" id="feedback" rows="4" cols="30"></textarea></td>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td> <input type="submit" value="Gửi" id="submit" /> <input type="reset" value="Xóa" id="reset" /></td>
+            </tr>
+        </table>
+    </form>
+
+
+
+</body>
+
+</html>

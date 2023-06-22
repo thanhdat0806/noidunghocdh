@@ -1,0 +1,50 @@
+* {
+    padding: 0x;
+    margin: 0px;
+}
+
+#header {
+    width: 1000px;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+#container {
+    height: 500px;
+    width: 1000px;
+}
+
+#nav {
+    background-color: grey;
+    width: 200px;
+    height: 500px;
+    float: left;
+}
+
+#content {
+    width: 800px;
+    height: 500px;
+    padding-left: 10px;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+#pngkt {
+    float: left;
+}
+
+#pngct {
+    float: right;
+}
+
+#content p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#nav ul li {
+    list-style-type: none;
+}

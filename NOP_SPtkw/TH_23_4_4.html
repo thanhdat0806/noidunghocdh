@@ -1,0 +1,95 @@
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Internet Standards</title>
+		<link rel="stylesheet" href="styles-1.css" />
+		<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script>
+		function loadCanvas() {
+			var canvas = document.getElementById('my_canvas');
+			if(canvas.getContext) {
+				var ctx = canvas.getContext('2d');
+
+				ctx.beginPath();
+				ctx.arc(245,160,150,0,Math.PI*2,true);
+				ctx.fillStyle = "rgb(255,255,204)";
+				ctx.fill();
+				ctx.stroke();
+
+				ctx.fillStyle = "black";
+				ctx.beginPath();
+				ctx.arc(200,110,15,0,Math.PI*2,true);
+				ctx.fill();
+
+				ctx.beginPath();
+				ctx.arc(280,110,15,0,Math.PI*2,true);
+				ctx.fill();
+
+				ctx.beginPath();
+				ctx.arc(240,170,20,4,Math.PI*2,true);
+				ctx.stroke();
+
+				ctx.beginPath();
+				ctx.arc(240,190,60,0,Math.PI,false);
+				ctx.stroke();
+			} else {
+				document.getElementById('my_canvas').style.display = 'none';
+				document.getElementById('no-canvas').style.display = 'block';
+			}
+		}
+		</script>
+	</head>
+	<body onload="loadCanvas();">
+		<header>
+			<hgroup>
+				<h1><center>Overview of Internet <br> Information Services 5.0</center></h1>
+				<h2>An application example of HTML5 and CSS3</h2>
+			</hgroup>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="TH_23_4.html">Home</a></li>
+				<li><a href="TH_23_4_2.html">Administration</a></li>
+				<li><a href="TH_23_4_3.html">Programmability</a></li>
+				<li><b>Internet Standards</b></li>
+				<li><a href="TH_23_4_5.html">Architecture Overview</a></li>
+			</ul>
+		</nav>
+
+		<article>
+			<header>
+				<time datetime="2012-09-20" pubdate>
+					<span>Sep</span> 20
+				</time>
+				<h1>
+					<a href="#" title="Link to this post" rel="bookmark">Internet Standards</a>
+				</h1>
+			</header>
+			
+				<p><b>Web Distributed Authoring and Versioning (WebDAV)</b> Lets remote authors edit, move, or delete files, file properties, directories, and directory properties on your server over an HTTP connection.</p>
+				<p><b>FTP Restart</b> Resumes downloading a file through File Transfer Protocol (FTP) at the point where the data transfer was interrupted.</p>
+				<p><b>HTTP Compression</b> Transmits pages faster between the Web server and compression-enabled clients. Compresses and caches static files, and compresses dynamically generated files on demand.</p>			
+			</section>
+
+			<section>
+				<header>
+					<h1>Internet Structure Educational Video</h1>
+				</header>
+				<p><iframe width="640" height="360" src="images/PHP-2.mp4" frameborder="0" allowfullscreen></iframe>
+					<div class="no-html5-video"><p>This video will work in Mozilla Firefox or Google Chrome only.</p></div>
+				</video></p>
+			</section>
+
+			<section>
+				
+
+		<footer>
+			<p>&copy; 2012 ngocaotong. All rights reserved.</p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page dat</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="dat-main">
+        <div id="dat-form-login">
+            <span>Username:</span> <input type="text" class="dat-ip" id="dat-username" placeholder="Username/ gmail">
+            <div class="clear"></div>
+            <span>Password:</span> <input type="password" class="dat-ip" id="dat-password" placeholder="Password">
+            <div class="clear"></div>
+            <div id="dat-error"></div>
+            <input type="button" id="dat-btn" value="Login" onclick="datLoginForm()">
+        </div>
+        <div id="dat-form-login1">
+            <span>Username:</span> <input class="dat-ip1" type="text" id="us" disabled>
+            <span>Pass:</span> <input class="dat-ip1" type="text" id="pass" disabled>
+            <button type="button" id="dat-btn1" onclick="logout()">Logout</button>
+        </div>
+    </div>
+    <script src="js/style.js"></script>
+</body>
+
+</html>

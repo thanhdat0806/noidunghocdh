@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <img src="vang.jpg" width="1500px" height="300px">
+    <table border="1" style="width: 200px; float: left;height: 250px; color: royalblue;border: slateblue;">
+        <tr>
+            <td>Trang chủ</td>
+        </tr>
+        <tr>
+            <td>Giới thiệu sản phẩm</td>
+        </tr>
+        <tr>
+            <td>Các đại lý</td>
+        </tr>
+        <tr>
+            <td>Dịch vụ</td>
+        </tr>
+        <tr>
+            <td>Hợp tác</td>
+        </tr>
+        <tr>
+            <td>Góp ý</td>
+        </tr>
+        <tr>
+            <td>Quảng cáo</td>
+        </tr>
+    </table>
+    <form action="form_action.php" method="get" style="text-align: center; color: royalblue;">
+        <legend style="color: red;"><b>HỘP THƯ GÓP Ý</b></legend>
+        <label>Họ tên</label>
+        <input type="text" name="name" size="30" />
+        <br/>
+        <label for="name">Hộ khẩu</label>
+        <select style="width: 220px;">
+            <option value="1" selected="selected">Tp Ho Chi Minh</option>
+            <option value="2">Ha Noi</option>
+        </select>
+        <br>
+        <label >Góp ý về lĩnh vực</label>
+        <input type="checkbox" checked="checked"/> Dịch vụ
+        <input type="checkbox"/> Sản phẩm
+        <input type="checkbox"/> Loại khác
+        <br>
+        <label >Ngôn ngữ</label>
+        <input type="radio" name="ngonngu" value="anh" checked="checked"/> Anh
+        <input type="radio" name="ngonngu" value="viet"/> Việt
+        <br>
+        <label >Nội dung</label>
+        <textarea rows="10" cols="30"></textarea>
+        <br/>
+        <input type="submit" value="Submit" id="submit"/>
+        <input type="reset" value="Xoa" id="reset"/>
+    </form>
+</body>
+</html>

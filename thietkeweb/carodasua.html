@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        #dat_table {
+            background-color: yellow;
+            width: 400px;
+            height: 400px;
+            text-align: center;
+            border-color: white;
+        }
+        
+        .dat_oco {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="dat_hide">Hide</button>
+    <button id="dat_show">Show</button>
+    <button id="dat_toggle">Toggle</button>
+    <div>
+        <table id="dat_table" border="1">
+            <tr>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+            </tr>
+            <tr>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+            </tr>
+            <tr>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+            </tr>
+            <tr>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+            </tr>
+            <tr>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+            </tr>
+            <tr>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+            </tr>
+            <tr>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+            </tr>
+            <tr>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+            </tr>
+            <tr>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+            </tr>
+            <tr>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+                <td class="dat_oco"></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $("#dat_hide").click(function() {
+                $("#dat_table").hide();
+            });
+            $("#dat_show").click(function() {
+                $("#dat_table").show();
+            });
+            $("#dat_toggle").click(function() {
+                $("#dat_table").slideToggle("slow");
+            });
+            $(".dat_oco").click(function() {
+                if ($(this).html() == "") {
+                    dem = dem + 1;
+                    if (dem % 2 == 1)
+                        $(this).html("X");
+                    else
+                        $(this).html("O");
+                } else
+                    alert("Bạn đã đánh vào ô này rồi")
+            });
+        });
+        var dem = 0
+    </script>
+    <script>
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    width: 1220px;
+    margin: 0 auto;
+}
+
+#header {
+    width: 1220px;
+    background-color: black;
+    display: inline-block;
+}
+
+#header h2 a {
+    color: white;
+    font-weight: bold;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.trai {
+    float: left;
+    padding: 10px 10px;
+}
+
+.phai {
+    float: right;
+}
+
+#header span {
+    color: white;
+}
+
+#header ul {
+    background: black;
+}
+
+#header ul li {
+    list-style-type: none;
+    line-height: 40px;
+    display: inline-block;
+}
+
+#header ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    color: gray;
+    display: block;
+}
+
+#header ul li a:hover {
+    color: white;
+}
+
+#container {
+    width: 1220px;
+    height: 1000px;
+    background-image: url("bg.jpg");
+}
+
+.B {
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+
+.B1 {
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.C {
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+
+.C1 {
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+#body {
+    background-image: url("bg.jpg");
+}
+
+#giua button {
+    width: 280px;
+    height: 70px;
+    color: white;
+    background-color: #d84780;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.clear {
+    clear: both;
+}

@@ -1,0 +1,104 @@
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Programmability</title>
+		<link rel="stylesheet" href="styles-1.css" />
+		<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script>
+		function loadCanvas() {
+			var canvas = document.getElementById('my_canvas');
+			if(canvas.getContext) {
+				var ctx = canvas.getContext('2d');
+
+				ctx.beginPath();
+				ctx.arc(245,160,150,0,Math.PI*2,true);
+				ctx.fillStyle = "rgb(255,255,204)";
+				ctx.fill();
+				ctx.stroke();
+
+				ctx.fillStyle = "black";
+				ctx.beginPath();
+				ctx.arc(200,110,15,0,Math.PI*2,true);
+				ctx.fill();
+
+				ctx.beginPath();
+				ctx.arc(280,110,15,0,Math.PI*2,true);
+				ctx.fill();
+
+				ctx.beginPath();
+				ctx.arc(240,170,20,4,Math.PI*2,true);
+				ctx.stroke();
+
+				ctx.beginPath();
+				ctx.arc(240,190,60,0,Math.PI,false);
+				ctx.stroke();
+			} else {
+				document.getElementById('my_canvas').style.display = 'none';
+				document.getElementById('no-canvas').style.display = 'block';
+			}
+		}
+		</script>
+	</head>
+	<body onload="loadCanvas();">
+		<header>
+			<hgroup>
+				<h1><center>Overview of Internet <br> Information Services 5.0</center></h1>
+				<h2>An application example of HTML5 and CSS3</h2>
+			</hgroup>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="TH_23_4.html">Home</a></li>
+				<li><a href="TH_23_4_2.html">Administration</a></li>
+				<li><b>Programmability</b></li>
+				<li><a href="TH_23_4_4.html">Internet Standards</a></li>
+				<li><a href="TH_23_4_5.html">Architecture Overview</a></li>
+			</ul>
+		</nav>
+
+		<article>
+			<header>
+				<time datetime="2012-09-20" pubdate>
+					<span>Sep</span> 20
+				</time>
+				<h1>
+					<a href="#" title="Link to this post" rel="bookmark">Programmability</a>
+				</h1>
+			</header>
+			<section>
+				<p><b>Application Protection</b> IIS 5.0 offers greater protection and increased reliability for your Web applications. By default, IIS 5.0 will run all of your applications in a common (or pooled) process that is separate from core IIS 5.0 processes. In addition, you can still isolate mission-critical applications that should be run outside of both core IIS 5.0 and pooled processes.</p>
+				<center><img src="images/net.gif"align="left"vspace="4" hspace="12" border="1"></center>
+				<p><b>New Features inASP</b> Enhance performance and streamline your server-side scripts:</p>
+<p>- New flow control methods<br>
+- Improved error handling<br>
+- Scriptless ASP<br>
+- Performance-enhanced objects<br>
+- Extensible Markup Language (XML) integration<br>
+- Microsoft� Windows� Script Components<br>
+- A new way to determine browser capabilities<br>
+- ASP self-tuning<br>
+- Server-side include with SRC attribute<br>
+- Encoded scripts in ASP pages</p>
+<p><b>ADSI 2.0</b> Adds custom objects, properties, and methods to the existing Microsoft� Active Directory Service Interfaces" (ADSI) provider, giving you even more flexibility in configuring your sites.</p>
+			</section>
+
+			<section>
+				<header>
+					<h1>PHP cơ bản | Bài 1: Cài đặt XAMPP - VSCode và viết chương trình đầu tiên</h1>
+				</header>
+				<p><iframe width="640" height="360" src="images/PHP-1.mp4" frameborder="0" allowfullscreen></iframe>
+					<div class="no-html5-video"><p>This video will work in Mozilla Firefox or Google Chrome only.</p></div>
+				</video></p>
+			</section>
+
+			
+		<footer>
+			<p>&copy; 2012 ngocaotong. All rights reserved.</p>
+		</footer>
+	</body>
+</html>

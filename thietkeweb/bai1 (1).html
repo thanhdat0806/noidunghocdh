@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        #son_table {
+            background-color: yellow;
+            width: 400px;
+            height: 400px;
+            text-align: center;
+        }
+        
+        .oco {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="son_hide">Hide</button>
+    <button id="son_show">Show</button>
+    <button id="son_toggle">Toggle</button>
+    <div>
+        <table id="son_table" border="1">
+            <tr>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+            </tr>
+            <tr>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+            </tr>
+            <tr>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+            </tr>
+            <tr>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+            </tr>
+            <tr>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+            </tr>
+            <tr>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+            </tr>
+            <tr>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+            </tr>
+            <tr>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+            </tr>
+            <tr>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+            </tr>
+            <tr>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+                <td class="oco"></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $("#son_hide").click(function() {
+                $("#son_table").hide();
+            });
+            $("#son_show").click(function() {
+                $("#son_table").show();
+            });
+            $("#son_toggle").click(function() {
+                $("#son_table").slideToggle("slow");
+            });
+            $(".oco").click(function() {
+                if ($(this).html() == "") {
+                    dem = dem + 1;
+                    if (dem % 2 == 1)
+                        $(this).html("x");
+                    else
+                        $(this).html("0");
+                } else
+                    alert("Bạn đã đánh vào ô này rồi")
+            });
+        });
+        var dem = 0
+    </script>
+    <script>
+    </script>
+</body>
+
+</html>

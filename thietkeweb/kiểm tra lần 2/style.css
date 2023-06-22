@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#thanhson-main {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#thanhson-form-login {
+    margin-top: 10px;
+    width: 400px;
+    background-color: #ccc;
+    border: 1px solid #000;
+}
+
+#thanhson-form-login span {
+    font-size: 15px;
+    font-weight: bold;
+    width: 100px;
+    text-align: right;
+    float: left;
+    line-height: 30px;
+    margin-right: 10px;
+}
+
+.thanhson-ip {
+    width: 200px;
+    line-height: 30px;
+    border: thin #999 solid;
+    border-radius: 5px;
+    margin: 5px;
+    float: left;
+    outline: none;
+}
+
+#thanhson-btn {
+    margin: 10px 0px 10px 200px;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    background-color: green;
+}
+
+.thanhson-error {
+    width: 300px;
+    margin: 0 auto;
+    font-size: 15px;
+    background-color: greenyellow;
+}
+
+thanhson-error1 {
+    display: none;
+}
+
+#thanhson-error2 {
+    display: none;
+}
+
+.clear {
+    clear: both;
+}

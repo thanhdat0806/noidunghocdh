@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://localhost/Bang-php/BaiTapTH/MYSQL/Bai2/2_9.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .table{width: 800px; background-color: lightgoldenrodyellow;}
+    .table-sp{border-collapse: collapse;width: 600px;}
+    .header{
+        font-size: 25px; 
+        color: #f96409;
+        padding: 5px; 
+        font-weight: bold;
+        text-align: center;
+    }
+    .header1{
+        font-size: 30px; 
+        color: #f96409;
+        padding: 5px; 
+        font-weight: bold;
+        text-align: center;
+    }
+    .a, .b{padding-top: 5px;}
+    ul{list-style-type: none;margin: 10px 0 10px -35px;padding-right: 5px;}
+    img{height: 150px;}
+    .sp{
+        height: 240px;
+    }
+</style><style>.--savior-overlay-transform-reset {
+  transform: none !important;
+}
+.--savior-overlay-z-index-top {
+  z-index: 2147483643 !important;
+}
+.--savior-overlay-position-relative {
+  position: relative;
+}
+.--savior-overlay-overflow-x-visible {
+  overflow-x: visible !important;
+}
+.--savior-overlay-overflow-y-visible {
+  overflow-y: visible !important;
+}
+.--savior-overlay-z-index-reset {
+  z-index: auto !important;
+}
+.--savior-overlay-display-none {
+  display: none !important;
+}
+.--savior-overlay-clearfix {
+  clear: both;
+}
+.--savior-overlay-reset-filter {
+  filter: none !important;
+  backdrop-filter: none !important;
+}
+.--savior-tooltip-host {
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+}
+/*Override css styles for Twitch.tv*/
+main.--savior-overlay-z-index-reset {
+  z-index: auto !important;
+}
+main.--savior-overlay-z-index-top {
+  z-index: auto !important;
+}
+main.--savior-overlay-z-index-top .channel-root__player-container + div,
+main.--savior-overlay-z-index-top .video-player-hosting-ui__container + div {
+  opacity: 0.1;
+}
+/*Dirty hack for facebook big video page e.g: https://www.facebook.com/abc/videos/...*/
+.--savior-backdrop {
+  position: fixed !important;
+  z-index: 2147483642 !important;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.9);
+}
+.--savior-overlay-twitter-video-player {
+  position: fixed;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+}
+/* Fix conflict css with zingmp3 */
+.zm-video-modal.--savior-overlay-z-index-reset {
+  position: absolute;
+}
+/* Dirty hack for xvideos99 */
+#page #main.--savior-overlay-z-index-reset {
+  z-index: auto !important;
+}
+/* Overlay for ok.ru */
+#vp_w.--savior-overlay-z-index-reset.media-layer.media-layer__video {
+  position: absolute;
+  overflow-y: hidden;
+}
+/* Fix missing controller for tv.naver.com */
+.--savior-overlay-z-index-top.rmc_controller,
+.--savior-overlay-z-index-top.rmc_setting_intro,
+.--savior-overlay-z-index-top.rmc_highlight,
+.--savior-overlay-z-index-top.rmc_control_settings {
+  z-index: 2147483644 !important;
+}
+/* Dirty hack for douyi.com */
+.swiper-wrapper.--savior-overlay-z-index-reset .swiper-slide:not(.swiper-slide-active),
+.swiper-wrapper.--savior-overlay-transform-reset .swiper-slide:not(.swiper-slide-active) {
+  display: none;
+}
+.videoWrap + div > div {
+  pointer-events: unset;
+}
+/* Dirty hack for fpt.ai */
+.mfp-wrap.--savior-overlay-z-index-top {
+  position: relative;
+}
+.mfp-wrap.--savior-overlay-z-index-top .mfp-close {
+  display: none;
+}
+.mfp-wrap.--savior-overlay-z-index-top .mfp-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section.--savior-overlay-z-index-reset>main[role="main"].--savior-overlay-z-index-reset + nav {
+  z-index: -1 !important;
+}
+section.--savior-overlay-z-index-reset>main[role="main"].--savior-overlay-z-index-reset section.--savior-overlay-z-index-reset div.--savior-overlay-z-index-reset ~ div {
+  position: relative;
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+</style></head>
+
+<body>
+    <form action="http://localhost/Bang-php/BaiTapTH/MYSQL/Bai2/2_9.php" method="POST">
+        <table align="center" class="table">
+            <tbody><tr align="center" bgcolor="lightpink">
+                <td class="header1">TÌM KIẾM THÔNG TIN SỮA</td>
+            </tr>
+            <tr align="center" bgcolor="lightpink">
+                <td>
+                    Tên sữa:           
+                    <input type="text" name="keyword" value="gain">
+                    <input type="submit" name="find" value="Tìm kiếm">
+                </td>
+            </tr>
+            <tr align="center">
+                <td><b>Có 2 sản phẩm được tìm thấy</b></td>
+            </tr>
+            <tr>
+                <td>
+                    <table align="center" border="1" class="table-sp">
+                    
+                                    <tbody><tr bgcolor="#ffeee6" class="header">
+                                        <td colspan="2">Gain Advance - Abbott</td>
+                                    </tr> 
+                                    <tr class="sp">
+                                        <td align="center"><img src="./Document_files/s_abbott_gainadvance_bot_400.jpg" alt=""></td>
+                                        <td>
+                                            <ul>
+                                                <li><b><i>Thành phần dinh dưỡng:</i></b></li>
+                                                <li>Sữa không béo, dầu thực vật, đường lactose, đường sucrose, hương liệu vani nhân tạo, các vitamin và khoáng chất cần thiết, nucleotide và taurine.</li>
+                                                <li class="a"><b><i>Thành phần dinh dưỡng:</i></b></li>
+                                                <li>Sữa bột Gain Advance sữa bột tiếp theo giàu đạmTPAN &amp; Taurine giúp hỗ trợ quá trình phát triển hệ thống miễn dịch và não bộ của bé</li>
+                                                <li class="b"><b><i>Trọng lượng: </i></b>400 gr - <b><i>Đơn giá: </i></b>107000 VNĐ'</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr bgcolor="#ffeee6" class="header">
+                                        <td colspan="2">Gain IQ - Abbott</td>
+                                    </tr> 
+                                    <tr class="sp">
+                                        <td align="center"><img src="./Document_files/s_abbott_ganiq.jpg" alt=""></td>
+                                        <td>
+                                            <ul>
+                                                <li><b><i>Thành phần dinh dưỡng:</i></b></li>
+                                                <li>GAIN IQ có nguồn đạm chất lượng cao, hỗn hợp dầu thực vật chức các axit béo thiết yếu, chất bột đường, các Vitamin và khoáng chất , bảo vệ hệ tiêu hóa tốt hơn nhờ sự bổ sung FOS và Probiotic</li>
+                                                <li class="a"><b><i>Thành phần dinh dưỡng:</i></b></li>
+                                                <li>Nhằm thúc đẩy sự tăng trưởng của trẻ và đảm bảo năng lượng cần thiết đối với trẻ năng động. Hỗn hợp dưỡng chất độc đáo hỗ trợ sự phát triển não bộ và thị giác của trẻ</li>
+                                                <li class="b"><b><i>Trọng lượng: </i></b>400 gr - <b><i>Đơn giá: </i></b>107000 VNĐ'</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                 
+                    </tbody></table>
+                </td>
+            </tr>
+        </tbody></table>
+    </form>
+
+</body><div style="position: absolute; top: 0px; display: block !important;"></div></html>

@@ -1,0 +1,126 @@
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Architecture Overview</title>
+		<link rel="stylesheet" href="styles-1.css" />
+		<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script>
+		function loadCanvas() {
+			var canvas = document.getElementById('my_canvas');
+			if(canvas.getContext) {
+				var ctx = canvas.getContext('2d');
+
+				ctx.beginPath();
+				ctx.arc(245,160,150,0,Math.PI*2,true);
+				ctx.fillStyle = "rgb(255,255,204)";
+				ctx.fill();
+				ctx.stroke();
+
+				ctx.fillStyle = "black";
+				ctx.beginPath();
+				ctx.arc(200,110,15,0,Math.PI*2,true);
+				ctx.fill();
+
+				ctx.beginPath();
+				ctx.arc(280,110,15,0,Math.PI*2,true);
+				ctx.fill();
+
+				ctx.beginPath();
+				ctx.arc(240,170,20,4,Math.PI*2,true);
+				ctx.stroke();
+
+				ctx.beginPath();
+				ctx.arc(240,190,60,0,Math.PI,false);
+				ctx.stroke();
+			} else {
+				document.getElementById('my_canvas').style.display = 'none';
+				document.getElementById('no-canvas').style.display = 'block';
+			}
+		}
+		</script>
+	</head>
+	<body onload="loadCanvas();">
+		<header>
+			<hgroup>
+				<h1><center>Overview of Internet <br> Information Services 5.0</center></h1>
+				<h2>An application example of HTML5 and CSS3</h2>
+			</hgroup>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="TH_23_4.html">Home</a></li>
+				<li><a href="TH_23_4_2.html">Administration</a></li>
+				<li><a href="TH_23_4_3.html">Programmability</a></li>
+				<li><a href="TH_23_4_4.html">Internet Standards</a></li>
+				<li><b>Architecture Overview</b></li>
+			</ul>
+		</nav>
+
+		<article>
+			<header>
+				<time datetime="2012-09-20" pubdate>
+					<span>Sep</span> 20
+				</time>
+				<h1>
+					<a href="#" title="Link to this post" rel="bookmark">Architecture Overview</a>
+				</h1>
+			</header>
+			<p><b><i>Figure 1.1 IIS 5.0 Architecture</i></b></p>
+
+<p>The standard Internet services (Web and FTP servers) reside in a process called Inetinfo. In addition to these Internet services, this process contains the shared thread pool, cache, and logging services of IIS 5.0.</p>
+<p>By sharing the same security model (user accounts) as Windows 2000 Server, IIS 5.0 eliminates the need for additional user-account administration. IIS 5.0 administration also borrows existing Windows 2000 Server tools such as System Monitor, Event Viewer, and MMC to conduct similar administrative procedures.</p>
+<p>The following sections describe the Windows 2000 tools that are tightly integrated with IIS 5.0.</p>
+<p><b>Microsoft Management Console</b></p>
+<p>MMC hosts programs, called snap-ins, from which you can manage your servers. MMC offers a common framework in which various snap-ins can run, so that you can manage several services with a single interface. In addition to integrating and standardizing administrative tools, MMC also lets you customize the console. By picking and choosing specific snap-ins, you can create management consoles that include only the administrative tools you need.</p>
+<p>For example, the IIS 5.0 MMC hosts Internet Services Manager as a snap-in from which you can administer Web sites on the computer where IIS 5.0 is installed. As another example, Microsoft� Component Services includes an MMC snap-in from which you can administer its transaction packages.</p>
+<p><b>Active Server Pages and Microsoft Script Debugger</b></p>
+<p>ASP is a server-side application environment that allows you to create dynamic Web sites and powerful Web applications. ASP pages can contain HTML tags, text, and script commands. The script commands execute on the server and return HTML pages to the requesting browser. ASP pages can call Microsoft� Component Object Model (COM) components to perform tasks, such as connecting to a database or performing a business calculation. With ASP, you can add interactive content to your Web pages or build entire Web applications that use HTML pages as the user interface.</p>
+<p>Microsoft� Script Debugger is designed to help you quickly locate bugs and interactively test your server-side scripts in ASP pages. Script Debugger, which works with Microsoft� Internet Explorer version 3.0 or later, includes just-in-time (JIT) debugging. When a run �time error interrupts execution of your script, the Script Debugger automatically starts, displays the .asp file with a statement pointer indicating the line that caused the error, and generates an error message. With this type of debugging, your computer suspends further execution of the program. You must correct the error with an editing program and save your changes before you can resume running the script. Figure 1.2 shows a code sample, in which Script Debugger has highlighted a line containing an error.</p>
+
+
+
+<p><b><i>Figure 1.2 Microsoft Script Debugger</i></b></p>
+
+<p><b>Indexing Service</b></p>
+
+<p>Indexing Service indexes files and file properties on your disks and stores the information in a catalog. It searches the complete text and properties of documents stored on an Internet or intranet Web site. Using samples installed with Indexing Service, a Web site administrator can quickly create Web query forms and make them available to users. Users can then generate queries by filling in the fields of the query form. The Web server forwards this query form to the query engine, which finds the pertinent documents and returns the results, in the form of a Web page, to the client.</p>
+
+<p>In addition to indexing Web pages in HTML format, Indexing Service can search documents formatted by applications such as Microsoft� Word and Microsoft� Excel, so that you don't have to convert them to HTML.</p>
+
+<p><b>Certificate Services</b></p>
+
+<p>Microsoft� Certificate Services is a general-purpose, customizable server application that issues, revokes, and renews digital certificates. These certificates, which are generated in standard X.509 version 3 format, are used for public-key cryptography applications such as server and client authentication under the SSL or Private Communication Technology (PCT) protocols. With Certificate Services, organizations can perform authentication on a corporate intranet or across the Internet.</p>
+
+<p><b>Message Queuing</b></p>
+
+<p>Message Queuing makes it possible for application programs to send and receive messages quickly, reliably, and asynchronously. It features Microsoft� ActiveX� support, security controls, administration tools, and integration with other strategic Microsoft features such as IIS 5.0, Component Services, and Certificate Services. As a result, Message Queuing is the queuing product of choice for applications running on Microsoft� Windows� 95 and Windows� 98, as well as on Windows 2000 Server. Message Queuing is also interoperable with other important platforms and products through the Message Queuing connector.</p>
+
+<p><b>Database Access Component</b></p>
+
+<p>The Microsoft� Database Access component uses Microsoft� ActiveX� Data Objects (ADO) to access information stored in a database or other tabular data structure. Data �driven client/server applications deployed over the Web or an intranet can use this component to integrate information from a variety of sources, including both relational (SQL) and non-relational database management systems (DBMSs). The Database Access component consists of the following, all of which are released, documented, and supported together:</p>
+
+<p>- ADO and Microsoft� Remote Data Service (RDS)<br>
+
+- Open Database Connectivity (ODBC)<br>
+
+- The Microsoft� OLE DB provider for ODBC</p>
+
+<p>ADO can help you write applications that let you access and manipulate data in a database server through an OLE DB provider. The primary benefits of ADO are ease of use, high speed, low-memory overhead, and a small disk footprint. ADO supports key features for building client/server and Web applications.</p>
+
+<p>ADO also features RDS, a high-performance client-side data caching technology that brings database connectivity to Web applications. You can use RDS to build intelligent Web applications that let you access and update data from any OLE DB provider, including ODBC-compliant DBMSs. Because you can implement RDS with familiar technologyoff-the-shelf visual controls, HTML, and Microsoft� Visual Basic� Scripting Edition (VBScript)� RDS integrates seamlessly with existing Microsoft� Visual Basic� applications, so that you can transport them to the Web.</p>
+
+<p>The Database Access component also includes ODBC and the OLE DB provider for ODBC. Used in conjunction with an appropriate ODBC driver, these components provide access to several popular DBMSs, including Microsoft� SQL Server", Oracle databases, Microsoft� Access, and several other desktop databases.</p>
+			</section>
+
+				
+
+		<footer>
+			<p>&copy; 2012 ngocaotong. All rights reserved.</p>
+		</footer>
+	</body>
+</html>

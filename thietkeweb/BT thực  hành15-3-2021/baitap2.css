@@ -1,0 +1,171 @@
+ * {
+     padding: 0px;
+     margin: 0px;
+ }
+ 
+ body {
+     width: 1020px;
+     margin: 0 auto;
+ }
+ 
+ #header {
+     width: 1020px;
+ }
+ 
+ #con_menu {
+     height: 40px;
+     padding: 2px 0px 4px 0px;
+     width: 100%;
+ }
+ 
+ #header ul {
+     background: red;
+     border-top: 1px dashed #fff;
+     border-bottom: 1px dashed #fff;
+     width: 100%;
+ }
+ 
+ #header ul li {
+     list-style-type: none;
+     line-height: 40px;
+     display: inline-block;
+ }
+ 
+ menu {
+     border-right: 1px solid #fff;
+ }
+ 
+ .spmoi {
+     border-top: 1px dashed #fff;
+     border-bottom: 1px dashed #fff;
+ }
+ 
+ #header ul li a {
+     text-decoration: none;
+     text-transform: uppercase;
+     padding: 0px 10px;
+     color: #fff;
+     display: block;
+ }
+ 
+ #header ul li a:hover {
+     background-color: darkred;
+ }
+ 
+ #container {
+     width: 1000px;
+ }
+ 
+ .dm {
+     width: 250px;
+     height: 50px;
+     border-bottom: 1px solid black;
+     border-left: 1px solid black;
+     border-right: 1px solid black;
+     border-top: 1px solid black;
+     background-color: white;
+     padding: 10px 10px 10px 10px;
+     text-decoration: none;
+ }
+ 
+ .dm a:hover {
+     background-color: rgb(47, 45, 45);
+ }
+ 
+ #nav {
+     width: 270px;
+     height: 500px;
+     float: left;
+ }
+ 
+ #nav h5 {
+     margin-top: 5px;
+     line-height: 50px;
+     color: white;
+     background-color: #EA4242;
+     width: 250px;
+     padding: 10px;
+     border-style: dashed;
+ }
+ 
+ #content h5 {
+     margin-top: 10px;
+     border-top: solid red;
+ }
+ 
+ #nav table {
+     height: 100px;
+     width: 250px;
+     border-color: gray;
+     text-align: center;
+ }
+ 
+ .h a:hover {
+     background-color: grey;
+ }
+ 
+ #content {
+     float: left;
+     width: 730px;
+     height: 500px;
+ }
+ 
+ #banner {
+     width: 550px;
+ }
+ 
+ .anh {
+     width: 150px;
+     height: 150px;
+ }
+ 
+ .vien {
+     width: 250px;
+     border: 0.5px solid;
+     border-color: black;
+ }
+ 
+ .anhgiay {
+     float: left;
+     border: 1px dotted;
+ }
+ 
+ .col-md {
+     width: 250px;
+     border: 0.3px solid;
+ }
+ 
+ .col-md :hover {
+     background-color: gray;
+ }
+ 
+ .sp {
+     width: 70px;
+     height: 80px;
+     border-style: ridge;
+     border-width: 1px;
+ }
+ 
+ .banner2 {
+     margin: 10px 5px 5px 0px;
+     width: 745px;
+ }
+ 
+ .text1 {
+     font-size: 20px;
+ }
+ 
+ .text2 {
+     font-size: 20px;
+     color: #EA4242;
+     text-shadow: 2px 2px 5px red;
+ }
+ 
+ .text3 {
+     font-size: 20px;
+     text-decoration: line-through;
+ }
+ 
+ .clear {
+     clear: both;
+ }
