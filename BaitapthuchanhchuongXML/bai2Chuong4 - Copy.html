@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="QLDH">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="KhachHang" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MaKH">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[a-zA-Z][a-zA-Z][0-9][0-9]"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="TenKH" type="xs:string"/>
+                            <xs:element name="DiaChi">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="([0-9])*([a-zA-Z])*"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="MatHang" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MaMH">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[a-zA-Z][a-zA-Z][0-9][0-9]"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="TenMH" type="xs:string"/>
+                            <xs:element name="SoLuong">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:unsignedInt"/>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="DonGia">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:unsignedLong"/>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="MaKH"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:key name="KHKey">
+            <xs:selector xpath="KhachHang"/>
+            <xs:field xpath="MaKH"/>
+        </xs:key>
+        <xs:key name="MHKey">
+            <xs:selector xpath="MatHang"/>
+            <xs:field xpath="MaMH"/>
+        </xs:key>
+        <xs:keyref name="MHKHKeyref" refer="KHKey">
+            <xs:selector xpath="MatHang"/>
+            <xs:field xpath="MaKH"/>
+        </xs:keyref>
+    </xs:element>
+</xs:schema>

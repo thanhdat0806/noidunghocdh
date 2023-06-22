@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OrderDetail OrderDate="2020-03-15" Customer="Peter Collingwood">
+    <Item ProductID="3" Quantity="3"/>
+     <Item ProductID="1" Quantity="5"/>
+</OrderDetail>
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OrderDetail>
+    <OrderDate>2022-03-15</OrderDate>
+    <Customer>Peter Collingwood</Customer>
+    <Item>
+        <ProductID>3</ProductID>
+        <Quantity>3</Quantity>
+    </Item>
+    <Item>
+        <ProductID>1</ProductID>
+        <Quantity>5</Quantity>
+    </Item>
+</OrderDetail>

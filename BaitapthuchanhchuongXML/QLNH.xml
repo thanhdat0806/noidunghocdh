@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="QLNH.xsl"?>
+<QLNH xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="QLNH.xsd">
+    <NhanVien>
+        <MaNV>NV01</MaNV>
+        <HoLot>Nguyễn Minh</HoLot>
+        <Ten>Hòa</Ten>
+        <GioiTinh>Nam</GioiTinh>
+    </NhanVien>
+    <NhanVien>
+        <MaNV>NV02</MaNV>
+        <HoLot>Lê Phương</HoLot>
+        <Ten>Nga</Ten>
+        <GioiTinh>Nu</GioiTinh>
+    </NhanVien>
+    <NhanVien>
+        <MaNV>NV03</MaNV>
+        <HoLot>Trần Mạnh</HoLot>
+        <Ten>Hùng</Ten>
+        <GioiTinh>Nam</GioiTinh>
+    </NhanVien>
+    <NhanVien>
+        <MaNV>NV04</MaNV>
+        <HoLot>Nguyễn Thanh</HoLot>
+        <Ten>Trúc</Ten>
+        <GioiTinh>Nu</GioiTinh>
+    </NhanVien>
+    <NhanVien>
+        <MaNV>NV05</MaNV>
+        <HoLot>Trương Huy</HoLot>
+        <Ten>Hoàng</Ten>
+        <GioiTinh>Nam</GioiTinh>
+    </NhanVien>
+    
+    <HangHoa>
+        <MaHH>H001</MaHH>
+        <TenHH>Cam</TenHH>
+        <DonViTinh>Thùng</DonViTinh>
+        <TenNCC>Thu Hà</TenNCC>
+    </HangHoa>
+    <HangHoa>
+        <MaHH>H002</MaHH>
+        <TenHH>Táo</TenHH>
+        <DonViTinh>Kg</DonViTinh>
+        <TenNCC>Phương Nam</TenNCC>
+    </HangHoa>
+    <HangHoa>
+        <MaHH>H003</MaHH>
+        <TenHH>Xoài</TenHH>
+        <DonViTinh>Kg</DonViTinh>
+        <TenNCC>TCV</TenNCC>
+    </HangHoa>
+    <HangHoa>
+        <MaHH>H004</MaHH>
+        <TenHH>Mận</TenHH>
+        <DonViTinh>Thùng</DonViTinh>
+        <TenNCC>Hòa Hưng</TenNCC>
+    </HangHoa>
+    <HangHoa>
+        <MaHH>H005</MaHH>
+        <TenHH>Dưa Lưới</TenHH>
+        <DonViTinh>Kg</DonViTinh>
+        <TenNCC>Phượng Hoàng</TenNCC>
+    </HangHoa>
+    
+    <HoaDonNhap>
+        <SoHD>HD0001</SoHD>
+        <NgayNhap>20/03/2020</NgayNhap>
+        <MaNV>NV01</MaNV>
+    </HoaDonNhap>
+    <HoaDonNhap>
+        <SoHD>HD0002</SoHD>
+        <NgayNhap>08/04/2020</NgayNhap>
+        <MaNV>NV02</MaNV>
+    </HoaDonNhap>
+    <HoaDonNhap>
+        <SoHD>HD0003</SoHD>
+        <NgayNhap>12/03/2020</NgayNhap>
+        <MaNV>NV03</MaNV>
+    </HoaDonNhap>
+    <HoaDonNhap>
+        <SoHD>HD0004</SoHD>
+        <NgayNhap>22/04/2020</NgayNhap>
+        <MaNV>NV04</MaNV>
+    </HoaDonNhap>
+    <HoaDonNhap>
+        <SoHD>HD0005</SoHD>
+        <NgayNhap>08/06/2020</NgayNhap>
+        <MaNV>NV05</MaNV>
+    </HoaDonNhap>
+    
+    <ChiTietNhap>
+        <SoHD>HD0001</SoHD>
+        <MaHH>H002</MaHH>
+        <SoLuong>20</SoLuong>
+        <DonGiaNhap>200000</DonGiaNhap>
+    </ChiTietNhap>
+    <ChiTietNhap>
+        <SoHD>HD0002</SoHD>
+        <MaHH>H001</MaHH>
+        <SoLuong>35</SoLuong>
+        <DonGiaNhap>190000</DonGiaNhap>
+    </ChiTietNhap>
+    <ChiTietNhap>
+        <SoHD>HD0003</SoHD>
+        <MaHH>H004</MaHH>
+        <SoLuong>15</SoLuong>
+        <DonGiaNhap>265000</DonGiaNhap>
+    </ChiTietNhap>
+    <ChiTietNhap>
+        <SoHD>HD0004</SoHD>
+        <MaHH>H005</MaHH>
+        <SoLuong>20</SoLuong>
+        <DonGiaNhap>300000</DonGiaNhap>
+    </ChiTietNhap>
+    <ChiTietNhap>
+        <SoHD>HD0005</SoHD>
+        <MaHH>H003</MaHH>
+        <SoLuong>50</SoLuong>
+        <DonGiaNhap>210000</DonGiaNhap>
+    </ChiTietNhap>
+</QLNH>
