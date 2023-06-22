@@ -1,0 +1,11 @@
+m<-c(1,2,3,4,5,6)
+n<-c("ABC","XYZ","MNL")
+MT<-matrix(c(192,280,250,370,420,350,
+210,305,280,300,380,360,190,260,300,
+310,390,380),3,6,byrow=T,dimnames=list(n,m))
+MT
+MT[1, ][MT[1, ] > 300]
+color<-c("red","green","blue")
+barplot(MT,main="Doanh thu sau thang",xlab="Thang",
+ylab="Doanh thu",names.arg=m,col=color)
+legend("topleft",name,fill=color)
